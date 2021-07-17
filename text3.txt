@@ -1,0 +1,35 @@
+^ This specifies the start of the line marker. ^tux matches a line that
+starts with tux.
+$ This specifies the end of the line marker. tux$ matches a line that
+ends with tux.
+. This matches any one character. Hack. matches Hack1,
+Hacki, but not Hack12 or
+Hackil; only one additional
+character matches.
+[] This matches any one of the characters enclosed
+in [chars].
+coo[kl] matches cook or
+cool.
+[^] This matches any one of the characters except
+those that are enclosed in [^chars].
+9[^01] matches 92 and
+93, but not 91 and 90.
+[-] This matches any character within the range
+specified in [].
+[1-5] matches any digits
+from 1 to 5.
+? This means that the preceding item must match
+one or zero times.
+colou?r matches color
+or colour, but not
+colouur.
++ This means that the preceding item must match
+one or more times.
+Rollno-9+ matches
+Rollno-99 and
+Rollno-9, but not
+Rollno-.
+* This means that the preceding item must match
+zero or more times.
+co*l matches cl, col, and
+coool
